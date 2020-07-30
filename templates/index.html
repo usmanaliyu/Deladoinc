@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %} DeladoInc | Home {% endblock %}
+{% block content %}
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url({% static 'img/bg-img/bg-1.jpg' %});"></div>
+                <!-- Slide Content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-slides-content text-center">
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Delado <span>inc.</span></h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Studios <span>Studios</span></h2>
+                                <a data-animation="fadeInUp" data-delay="500ms" href="{% url 'about' %}" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide -->
+           
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+
+
+
+
+    <!-- ##### Events Area Start ##### -->
+    <section class="events-area section-padding-100">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="{% static 'img/bg-img/e1.jpg' %}" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Features</h4>
+                            <div class="event-meta-data">
+                                <a href="#" class="event-place">$,4000</a>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="{% static 'img/bg-img/e2.jpg' %}" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Sessions</h4>
+                            <div class="event-meta-data">
+                                <a href="#" class="event-place">$200 Per Hour</a>
+                                
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Event Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-event-area mb-30">
+                        <div class="event-thumbnail">
+                            <img src="{% static 'img/bg-img/e3.jpg' %}" alt="">
+                        </div>
+                        <div class="event-text">
+                            <h4>Packages</h4>
+                            <div class="event-meta-data">
+                                <a href="#" class="event-place">Contact for Packages</a>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- ##### Events Area End ##### -->
+  
+
+
+
+    
+    
+
+   {% endblock %}
